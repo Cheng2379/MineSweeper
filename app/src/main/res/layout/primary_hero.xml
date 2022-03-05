@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ranking_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="排行榜"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/primaryHero_close"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/win_close" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/close"
+                android:backgroundTint="@color/Black" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAA4A4" />
+
+    <TextView
+        android:id="@+id/no_hero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无排行记录"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/Black"/>
+
+    <LinearLayout
+        android:id="@+id/primary_Hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="排名"
+                android:textColor="@color/Black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="记录"
+                android:textColor="@color/Black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:text="日期"
+                android:textColor="@color/Black"
+                android:textSize="30dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--第一名-->
+            <RelativeLayout
+                android:id="@+id/one_Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@mipmap/no_one" />
+
+                <TextView
+                    android:id="@+id/one_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/one_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <!--第二名-->
+            <RelativeLayout
+                android:id="@+id/two_Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@mipmap/no_two" />
+
+                <TextView
+                    android:id="@+id/two_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/two_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <!--第三名-->
+            <RelativeLayout
+                android:id="@+id/three_Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@mipmap/no_three" />
+
+                <TextView
+                    android:id="@+id/three_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/three_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <!--第四名-->
+            <RelativeLayout
+                android:id="@+id/four_Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@mipmap/no_four" />
+
+                <TextView
+                    android:id="@+id/four_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/four_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+            <!--第五名-->
+            <RelativeLayout
+                android:id="@+id/five_Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@mipmap/no_five" />
+
+                <TextView
+                    android:id="@+id/five_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/five_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+</LinearLayout>

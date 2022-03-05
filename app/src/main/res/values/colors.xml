@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Black">#000000</color>
+    <color name="While">#FFFFFF</color>
+    <color name="background_onClick">#C3C3C3</color>
+    <color name="one">#4150BE</color>
+    <color name="two">#1E6405</color>
+    <color name="three">#AA0505</color>
+    <color name="four">#0F0F8C</color>
+    <color name="five">#7D0505</color>
+    <color name="six">#AA0505</color>
+    <color name="seven">#AA0505</color>
+    <color name="eight">#AA0505</color>
+</resources>

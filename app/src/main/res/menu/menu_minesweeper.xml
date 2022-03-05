@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="重新开始" />
+
+    <item
+        android:id="@+id/difficulty_menu"
+        android:title="难度">
+
+        <menu>
+            <item
+                android:title="初级" />
+            <item
+                android:title="中级" />
+        </menu>
+
+    </item>
+
+    <item android:title="排行榜" >
+
+        <menu>
+            <item
+                android:title="初级排行榜" />
+            <item
+                android:title="中级排行榜" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="关于" />
+
+</menu>
